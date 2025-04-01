@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="stilo.css">
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: url('fondoceleste.webp') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #0b2b49;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: rgb(111, 245, 245);
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto 20px; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .decor {
+            width: 50px;
+            height: 5px;
+            background-color: #007BFF;
+            margin: 10px auto;
+        }
+
+     
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            background: #6fd9f3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#valores">Valores</a>
+    </div>
+
+    <div class="container">
+        <h1 id="mision">MISIÓN</h1>
+        <div class="decor"></div>
+        <p>Formar estudiantes con valores, conocimientos y habilidades que les permitan enfrentar los desafíos del futuro con éxito, promoviendo el compromiso social, la excelencia académica y el desarrollo</p>
+
+        <h1 id="vision">VISIÓN</h1>
+        <div class="decor"></div>
+        <p>Ser una institución educativa reconocida por su excelencia académica y su enfoque en la formación de líderes con principios éticos y compromiso social. Aspiramos a crear un ambiente de aprendizaje innovador, inclusivo y motivador, donde cada estudiante pueda alcanzar sus metas y contribuir positivamente al mundo.</p>
+
+        <h1 id="valores">VALORES</h1>
+        <div class="decor"></div>
+        <ul>
+            <li><strong>Responsabilidad:</strong> Fomentamos el compromiso y la dedicación en cada tarea.</li>
+            <li><strong>Respeto:</strong> Valoramos la diversidad y promovemos la armonía.</li>
+            <li><strong>Honestidad:</strong> Impulsamos la transparencia y la confianza.</li>
+            <li><strong>Solidaridad:</strong> Promovemos el apoyo mutuo y la cooperación.</li>
+            <li><strong>Excelencia:</strong> Buscamos la mejora continua y la superación.</li>
+        </ul>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>

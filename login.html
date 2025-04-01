@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas del Estudiante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="gregoriomelara-removebg-preview.png" alt="Logo de la escuela" width="150">
+    <h2>Ingresar para ver las notas</h2>
+    <form method="POST" action="http://localhost/escuela/notas.php">
+        <label for="correo">Correo del responsable:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="clave" name="clave" required>
+        <br>
+        <button type="submit">Ver Notas</button>
+    </form>
+</body>
+</html>
