@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Gregorio Melara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline id="videoFondo">
+        <source src="fondocelestee.mp4" type="video/mp4">
+        Tu navegador no soporta videos en HTML5.
+    </video>    
+
+    <header>
+        <img src="gregoriomelara-removebg-preview.png" alt="Logo de la escuela">
+        <h1>Centro Escolar Gregorio Melara</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="hiper1.html">Nosotros</a></li>
+            <li><a href="hiper.html">Contacto</a></li>
+            <li><a href="login.html" class="login-btn">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section class="bienvenida">
+        <h2>Bienvenidos a Nuestra Escuela</h2>
+        <p>Somos una institución dedicada a la excelencia educativa y al desarrollo de nuestros estudiantes.</p>
+        <a href="login.html" class="boton">Acceder a Plataforma</a>
+    </section>
+
+        <h2>Esfuerzo y Liderazgo, recuerda siempre trabajar en equipo.</h2>
+    <div class="video-container">
+        <video id="videoBienvenida" controls>
+            <source src="Liderazgo y Trabajo en Equipo.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <script>
+        function expandirVideo() {
+            var video = document.getElementById("videoBienvenida");
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) { 
+                video.webkitRequestFullscreen();
+           }   } 
+    </script>
+
+    <section class="info">
+        <div class="card">
+            <h3>Misión</h3>
+            <p>Formar estudiantes con valores y conocimientos para un futuro exitoso.</p>
+        </div>
+        <div class="card">
+            <h3>Visión</h3>
+            <p>Ser una escuela reconocida por su excelencia en la educación a nivel nacional.</p>
+        </div>
+        <div class="card">
+            <h3>Contacto</h3>
+            <p>📞 Tel: +503 7884-1980 <br> 📧 Email: gregoriomelara@.edu.sv</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Escuela Gregorio Melara - página con fines educativos.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://img.freepik.com/vector-gratis/fondo-realista-patinaje-sobre-hielo_23-2150959937.jpg?t=st=1743440717~exp=1743444317~hmac=8a2cbe70daa42c48fd8c326d7330060e918dd766ce60128dc09e1b439bc390f5&w=1380") no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px black;
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; 
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+td {
+    color: black !important;  
+    font-weight: bold; 
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+body {
+    font-family: Cambria,  Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+header {
+    background-color: #014ca2;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #0162c3;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(246, 239, 239);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.login-btn {
+    background-color: #2ECC71;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+.bienvenida {
+    padding: 70px;
+    background: url('fondo-escuela.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(15, 14, 14);
+}
+
+.bienvenida h2 {
+    font-size: 32px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2ECC71;
+    color: #f7f7fc;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgb(237, 233, 233);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.card h3 {
+    color: #0056b3;
+}
+
+
+footer {
+    background-color: #0162c3;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-container video {
+    width: 50%; 
+    max-width: 500px; 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); 
+    transition: all 0.3s ease-in-out;
+}
+
+.video-container video:hover {
+    transform: scale(1.05); 
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
